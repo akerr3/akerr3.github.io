@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Draft Thunder</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name ="viewport" content ="width=device-width, initial-scale = 1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.8/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <style>
+            .navbar{
+                margin-bottom: 0;
+                border-radius: 0;
+                background-color: #000000;
+                color: #FFF;
+                padding: 1% 0;
+                font-size: 1.2em;
+                border: 0;                
+            }
+            .navbar-brand
+            {
+                float: left;
+                min-height: 55px;
+                padding: 0 15px 5px;
+            }
+            .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus .navbar-inverse .navbar-nav .active a:hover
+            {
+                color: #FFF;
+                background-color: #000000;
+            }
+            .navbar-inverse .navbar-nav li a
+            {
+                color: #D5D5D5;
+            }
+            .title
+            {
+                color: #FDD017;
+                font-size: 200%;
+                font-family: "Times New Roman", Times, serif;
+            }
+            .carousel-caption
+            {
+                top:50%;
+                transform: translateY(-50%);
+                text-transform: uppercase;
+            }
+            .btn
+            {
+                font-size: 12px;
+                color:#000000;
+                padding: 10px 20px;
+                background: #FFF;
+            }
+            
+            .container
+            {
+                margin: 4% auto;
+            }
+            
+            #icon
+            {
+                max-width: 200px;
+                margin: 1% auto;
+            }
+            
+            footer
+            {
+                width:100%;
+                background-color: #000000;
+                padding: 3%;
+                color: #FFF;
+            }
+            
+            .fa
+            {
+                padding: 20px;
+                font-size: 30px;
+                color: #FFF;
+            }
+            
+            @media (max-width: 600px)
+            {
+                .carousel-caption
+                {
+                    display: none;
+                }
+            }
+            
+           
+            #icon
+            {
+                max-width: 150px;
+            }
+            
+            h4
+            {
+                font-size: .9em;
+            }
+            
+        </style>        
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                     </button>
+                    <a class="navbar-brand, title" href="#">Draft Thunder</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Must Have</a></li>
+                        <li>
+                            <form class="form-inline" method="post">
+                            <div class="form-group">
+                              <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="exampleInputPassword3">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Remember me
+                              </label>
+                            </div>
+                                <input type ="submit" value ="Submit">
+                          </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>                          
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <center><img src="FootballStadium.jpeg" width="1000" height="400"></center>
+                <div class="carousel-caption">
+                    <h1>Welcome to Draft Thunder</h1>
+                    <br>
+                    <button type="button" class="btn btn-default">Get Started</button>
+                </div>
+                </div>
+            <div class="item">
+                <center><img src="BaseballStadium.jpeg" width="1000" height="400"></center>
+            </div>
+            <div class="item">
+                <center><img src="BasketballHoop.jpeg" width="1000" height="400"></center>
+            </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            
+        </div>
+        <div class="container text-center">
+            <h2>What We Offer</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="VivaVegas.jpg" id="icon">
+                    <h4>Sports Lines</h4>
+                </div>
+                <div class="col-sm-4">
+                    <img src="SoccerOnTv.png" id="icon">
+                    <h4>Sports Lines</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>The World Cup Is Here!</h4>
+                    <p>Here at Draft Thunder, we love world cup season. Although
+                    the U.S. didn't make the cup, we set our eyes on winning some
+                    money.</p>
+                    <?php echo $msg; ?>
+                    <p>We will offer both sports lines for World Cup games, along
+                    with out favorite DFS plays.</p>
+                        
+                </div>
+                <div class="col-md-6">
+                    <img src="WorldCup.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        
+        <footer class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Social Media</h3>
+                    <a href="#"> facebook </a>
+                    <a href="#"> twitter </a>
+                    <a href="#"> instagram </a>
+                </div>
+            <div class="col-sm-4">
+                <h3>New Text</h3>
+            </div>
+            </div>    
+        </footer>
+    </body>
+</html>
