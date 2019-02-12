@@ -70,16 +70,18 @@
                 margin: 8px 0 30px 0;
             }
             
-            .btn-general
+            a:link
             {
-                font-family: tahoma;
-                border-radius: 28px;
-                font-size: 13px;
-                text-transform: uppercase;
-                margin: 0 6px;
-                padding: 12px 46px 12px 46px;
-                transition: all 0.4s;
-                background-color: #f4c613;
+                color: black;
+                background: gold;
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 5%;
+            }
+            
+            a:hover
+            {
+                background: green;
                 color: white;
             }
             
