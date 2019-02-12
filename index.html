@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang ="en">
     <head>
         <title>Alex Kokinakos</title>
@@ -10,26 +9,129 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        <link rel ="stylesheet" href="style.css">       
+        <link rel ="stylesheet" href="style.css">    
+        
+        <style>
+            
+            body
+            {
+                font-family: arial;
+            }
+            
+            #home{
+                background: none;
+                height: 100%;
+            }
+            
+            #home-bg-video
+            {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -1;
+            }
+            
+            #home-overlay
+            {
+                background-color: rgba(0,0,0,0.4);
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            
+            #home-content
+            {
+                width: 100%;
+                height: 100%;
+                display: table;
+                margin-top: 260px;
+               
+            }
+            
+            #home-content-inner
+            {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            
+            #home-heading h1
+            {
+                color: white;
+                font-size: 64px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            
+            #home-heading h1 span
+            {
+                color: #f4c613;
+                font-weight: 700;
+            }
+            
+            #home-text p
+            {
+                color: white;
+                font-size: 15px;
+                font-weight: 100;
+                margin: 8px 0 30px 0;
+            }
+            
+            .btn-general
+            {
+                font-family: tahoma;
+                border-radius: 28px;
+                font-size: 13px;
+                text-transform: uppercase;
+                margin: 0 6px;
+                padding: 12px 46px 12px 46px;
+                transition: all 0.4s;
+                background-color: #f4c613;
+                color: white;
+            }
+            
+        </style>
+        
+        
     </head>
     
     <body>   
            
-        <div class="section">
+        <section id="home">
+            <img src="Cleveland.gif" id="home-bg-video">
             
-            <h1> Alex Kokinakos </h1>
-            <div class="buttons">
-                <button type="button">Learn About Me</button>
-            </div>
-            <div class="video-container">
-                <IMG SRC="How_to_Become_Spider_Man.gif" height="375" width="508">
-                <IMG SRC="Scooby_Doo_Night_Of_1_000_Frights.gif" height="375" width="510">
-                <IMG SRC="Cleveland2.gif" height="375" width="510">
-                <IMG SRC="Cleveland3.gif" height="375" width="508">
-                <IMG SRC="Finding_Marge.gif" height="375" width="510">
-                <IMG SRC="Cleveland.gif" height="375" width="510">
+            <div id="home-overlay">
+                <div class="contain">
+                    <div id="home-content">
+                        <div id="home-content-inner" class="text-left">
+                            <div id="home-heading">
+                                <h1 id="home-heading-1">Alex</h1>
+                                <h1 id="home-heading-2">
+                                    <span>Kokinakos</span></h1>
+                            </div>
+                            <div id="home-text">
+                                <p>
+                                    My name is Alex Kokinakos, and I am an aspiring actor. <br> Please click the Learn About Me button to find out who I <br>am as an actor and as a person.
+                                </p>
+                            </div>
+                            <div id="home-btn">
+                                <a href="home.html" class="btn btn-general" role="button">Learn About Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             
-        </div>
+        </section>
+        
     </body>
 </html>
