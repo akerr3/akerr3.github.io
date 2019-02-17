@@ -5,6 +5,7 @@ header
     position: fixed;
     z-index: 1;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 ul
@@ -55,6 +56,11 @@ header nav ul li a:hover
 {
     font-weight: bold;
     color: white;
+}
+
+.col-sm-12
+{
+    margin-top: 100px;
 }
 
 .col-sm-12 span
