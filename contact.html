@@ -11,19 +11,25 @@ and open the template in the editor.
         <link rel="stylesheet" href="contact.css">
     </head>
     <body>
+        <section class="back white" id="ba">
+        <div class="wrapper">
+        <div class="content">
         <h1>Contact me</h1>
+        </div>
         <form action="https://formspree.io/alexkokinakosacts@gmail.com" method="POST">
-            <label>
+            
+        <div class="form">
+            <label class="top-form">
                 Email
-                <input type="email" name="email" class="email"/>
+                <input type="text" name="email" class="email" placeholder="username@email.com"/>
             </label>
-            <label>
+            <label class="middle-form">
                 Subject
-                <input type="text" name="subject" class="subject"/>
+                <input type="text" name="subject" class="subject" placeholder="Acting Jobs"/>
             </label>
-            <label>
+            <label class="bottom-form">
                 Message
-                <textarea name="message" class="message"></textarea>
+                <textarea name="message" class="message" placeholder="Your Message"></textarea>
             </label>
             <div class="status">
                 
@@ -31,6 +37,9 @@ and open the template in the editor.
             <button type="submit" class="submit">
                 Send
             </button>
+        </div>
         </form>
+        </div>
+        </section>
     </body>
 </html>
