@@ -1,0 +1,70 @@
+label{
+    display: block;
+}
+
+body
+{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)),url("Director.jpg");
+    background-size: cover;
+}
+
+.wrapper
+{
+    width: 100%;
+    max-width: 680px;
+    margin: 200px auto 0;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content
+{
+    text-align: center;
+}
+
+.content h1
+{
+    letter-spacing: 1px;
+    color: gold;
+}
+
+.form
+{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top-form
+{
+    color: gold;
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+}
+.middle-form
+{
+    color: gold;
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+}
+.bottom-form
+{
+    color: gold;
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+}
+
+.form input[type="text"], .form textarea
+{
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    outline: none;
+}
